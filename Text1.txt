@@ -1,1 +1,16 @@
-Sara sells sea shells
+לשמירת כל ההיסטוריה:
+
+git checkout main
+git merge --no-ff sub
+
+לדחיסה לקומיט אחד נקי:
+
+git checkout main
+git merge --squash sub
+git commit -m "Finished 5 features - ready for production"
+
+מה מתאים לך?
+
+    בחר ב---no-ff אם: חשוב לך לראות מתי בדיוק עבדת על כל תכונה קטנה ב-sub, ואתה רוצה שמי שיסתכל על ה-main בעתיד יוכל לראות את כל שלבי הפיתוח.
+
+    בחר ב---squash אם: ה-5 קומיטים ב-sub הם "בלגן" של עבודה (תיקוני טעויות, ניסויים) ואתה רוצה שב-main יופיע רק "המוצר המוגמר" כגרסה נקייה ומסודרת.
